@@ -1,0 +1,27 @@
+{
+  "name": "react-node",
+  "version": "1.0.0",
+  "description": "react et node",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youssef0024/nodereact.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/youssef0024/nodereact/issues"
+  },
+  "homepage": "https://github.com/youssef0024/nodereact#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
