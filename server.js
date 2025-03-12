@@ -1,10 +1,17 @@
+const cors = require('cors');
 const express = require('express');
 require('dotenv').config();
+
+const app = express();
+
+app.use(cors({
+    origin: 'http://localhost:3000'
+}));
 
 const PORT = process.env.PORT || 8090;
 
 
-const app = express();
+app.use(express.json());
 app.listen(PORT, () => {
     console.log(`Le serveur écoute sur le port ${PORT}`);
 });
@@ -17,6 +24,7 @@ app.get('/', (req, res) => {
     res.send('Bienvenue sur le serveur khkhkhkh!');
 });
 
-app.use(express.json());
+
+
 
 
